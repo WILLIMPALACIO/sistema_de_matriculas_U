@@ -1,45 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitio</title>
-    <link rel="stylesheet" href="assets/css/estilos.css" type="text/css">
-    <style>
-        body { background-color: #C0A0C3;
-        } 
-    </style>
-</head>
-<body>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Matrículas</title>
+
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+  </head>
+
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#" class="activo">Inicio</a></li>
-                <li><a href="pages/programas.html">Programas Academicos</a></li>
-                <li><a href="pages/docentes.html">Docentes</a></li>
-                <li><a href="pages/acerca.html">Acerca de</a></li>
-                <li class="derecha">
-                    <a>
-                    <input type="text" placeholder="Search...">
-                    <input type="submit" value="Enviar" />
-                    <input type="submit" value="Nuevo Usuario" />
-                    </a>
-                </li>    
-            </ul>
-        </nav>
-           
+      <nav>
+        <ul>
+          <li><a href="#" class="activo">Inicio</a></li>
+          <li><a href="pages/programas.html">Programas Académicos</a></li>
+          <li><a href="pages/docentes.html">Docentes</a></li>
+          <li><a href="pages/acerca.html">Acerca de</a></li>
+
+          <li class="derecha">
+            <input type="text" id="busqueda" placeholder="Buscar programa" />
+
+            <input type="submit" value="Buscar" onclick="buscarPrograma()" />
+          </li>
+        </ul>
+      </nav>
     </header>
-    <main>
-        <div class="miJumbo">
-            <h1>Sistema de matrículas</h1>
-        </div>
-    </main>   
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad hic, maiores rem culpa officia nobis dolorem, accusamus placeat dolorum iste possimus distinctio quibusdam voluptas dolores fuga minima vgeniam nostrum aliquam.</p>
-    <br>
-    <div class="miJumbo">
-        <input type="submit" value="Botón de ejemplo" />
-        <input type="submit" value="Otro botón" />
+
+    <div class="hero">
+      <div class="card">
+        <h3>Resultados</h3>
+
+        <div id="resultadoBusqueda">Escribe algo para buscar.</div>
+      </div>
+      <h1>Sistema de Matrículas</h1>
+      <p>Gestión académica moderna para estudiantes y docentes</p>
     </div>
 
-</body>
+    <div class="miJumbo">
+      <h2>Bienvenido</h2>
+
+      <p>
+        Nuestra plataforma permite gestionar programas académicos, docentes,
+        estudiantes y procesos de matrícula de forma rápida y segura.
+      </p>
+
+      <br />
+
+      <button onclick="window.location.href = 'pages/registro.html'">
+        Registrarse
+      </button>
+
+      <button onclick="window.location.href = 'pages/login.html'">
+        Iniciar Sesión
+      </button>
+
+      <button onclick="cerrarSesion()">Cerrar Sesión</button>
+
+      <p id="usuarioLog"></p>
+    </div>
+  </body>
 </html>
+<footer>
+
+<p>
+© 2026 Sistema de Matrículas Universitario
+</p>
+
+</footer>
