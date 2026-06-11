@@ -5,5 +5,5 @@ Incluye funcionalidades como navegación entre módulos, registro e inicio de se
 
 Este proyecto fue creado como una plantilla y prototipo funcional que puede ser utilizado por estudiantes, desarrolladores y docentes como base para la creación de sistemas académicos más completos.
 
-Autor
+Autor:
 Willim Palacio
